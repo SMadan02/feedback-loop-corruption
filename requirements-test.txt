@@ -1,0 +1,9 @@
+# Only what the tests need (no torch, kaggle or plotting), so CI installs fast.
+pandas==3.1.1
+numpy==2.5.4
+scikit-learn==1.9.1
+xgboost==3.4.1
+mlflow-skinny==3.18.0
+fastapi==0.163.1
+httpx==0.28.1
+pytest==9.2.0
