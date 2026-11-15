@@ -1,0 +1,10 @@
+# Only what the API container needs (no training/plotting/kaggle tooling).
+--extra-index-url https://download.pytorch.org/whl/cpu
+pandas==3.1.1
+numpy==2.5.4
+scikit-learn==1.9.1
+xgboost==3.4.1
+torch==2.15.0+cpu
+mlflow-skinny==3.18.0
+fastapi==0.163.1
+uvicorn==0.54.0

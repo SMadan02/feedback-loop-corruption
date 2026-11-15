@@ -1,0 +1,16 @@
+pandas==3.1.1
+numpy==2.5.4
+pyarrow==26.0.1
+scikit-learn==1.9.1
+xgboost==3.4.1
+matplotlib==3.11.2
+PyYAML==6.0.3
+pytest==9.2.0
+kaggle==2.2.5
+six==1.17.0
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.15.0+cpu
+mlflow==3.18.0
+fastapi==0.163.1
+uvicorn==0.54.0
+httpx==0.28.1

@@ -1,0 +1,8 @@
+*
+!Dockerfile
+!requirements-serve.txt
+!src/serve.py
+!src/monitor.py
+!src/scorer.py
+!model/
+!model/**

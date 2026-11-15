@@ -1,0 +1,12 @@
+# raw Kaggle CSVs (~1.3 GB) and anything derived from them
+data/
+.venv/
+__pycache__/
+*.pyc
+.env
+# MLflow tracking/registry and exported/served artifacts (rebuilt by src/train.py)
+mlflow.db
+mlruns/
+model/
+logs/
+.pytest_cache/
