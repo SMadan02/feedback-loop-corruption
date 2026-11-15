@@ -1,15 +1,21 @@
 name: CI
 
-on: [push, pull_request]
+on:
+  push:
+    paths-ignore: ["**.md"]   # docs-only changes don't need a test run
+  pull_request:
+    paths-ignore: ["**.md"]
 
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: astral-sh/setup-uv@v6
         with:
           python-version: "3.13"
-          cache: pip
-      - run: pip install -r requirements.txt
+          activate-environment: true   # creates .venv and puts it on PATH for the next steps
+          enable-cache: true
+          cache-dependency-glob: requirements-test.txt
+      - run: uv pip install -r requirements-test.txt
       - run: pytest -q
